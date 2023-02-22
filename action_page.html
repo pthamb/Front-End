@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>html form - submitted info</h2>
+
+<b>First name:</b><span id="fname">First name:</span><br><br>
+<b>Last name:</b><span id="lname">Last name:</span>
+
+<script>
+	S=window.location.search;
+	S=S.substring(1,S.length);
+	infos=S.split('&');
+	for (i=0;i<infos.length;i++){
+		tagname=infos[i].split('=')[0];
+		tagvalue=infos[i].split('=')[1];
+		document.getElementById(tagname).innerHTML=tagvalue;
+	}
+</script>
+
+</body>
+</html>
