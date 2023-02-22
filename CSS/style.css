@@ -1,0 +1,15 @@
+body{
+    background-image: url(rishi.jpg.jpg);
+    background-size:contain;
+}
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    opacity: 0.5;
+}

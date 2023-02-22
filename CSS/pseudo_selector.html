@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Document</title>
+    <style>
+        #parent > .box{
+            height: 20px;
+            border: 2px solid blue;
+        }
+        /* #parent .box + .box{
+            background-color: red;
+        }
+        #parent .box ~ .box{
+            background-color: blue;
+        } */
+        /* .box:hover{
+            background-color: grey;
+        } */
+    .box:not(.dontselectme){
+        background-color: red;
+    }
+    .box:nth-child(5){
+        background-color: yellow;
+    }
+    .box:hover{
+            background-color: grey;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id="parent">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box dontselectme"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="box">This is a box</div>
+    
+</body>
+</html>
